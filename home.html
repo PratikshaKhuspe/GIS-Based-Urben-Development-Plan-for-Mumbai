@@ -1,0 +1,72 @@
+<style>ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #1bc2a2;
+}
+
+ul li {
+  display: block;
+  position: relative;
+  float: left;
+  background: #1bc2a2;
+}
+li ul { display: none; }
+
+ul li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+}
+
+ul li a:hover { background: #2c3e50; }
+li:hover > ul {
+  display: block;
+  position: absolute;
+}
+
+li:hover li { float: none; }
+
+li:hover a { background: #1bc2a2; }
+
+li:hover li a:hover { background: #2c3e50; }
+
+.main-navigation li ul li { border-top: 0; }
+ul ul ul {
+  left: 100%;
+  top: 0;
+}
+ul:before,
+ul:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+ul:after { clear: both; }
+</style>
+
+<ul class="main-navigation">
+  <li><a href="home.html">Home</a></li>
+  <li><a href="gis.html">GIS</a></li>
+  <li><a href="mumbai.html">Development Plan</a></li>
+  <li><a href="digitize.html" >Digitized Map</a></li>
+  <li><a href="help.html" >Help</a></li>
+  
+  
+</ul>
+
+
+	<body bgcolor = "#E6E6FA">
+	
+
+		<h1 font size = "25", align = "center" >The Urban Development Plan, Mumbai</h1>
+		
+		<div>
+		<p  style="float: left;"><img src="mumbai_1.png" height="700px" width="1800px" border="5px" </p>
+			<p></br>Mumbai is now one of the fastest developing cities in the world. Opinions are often in extremes. While some people think this development has been possible due to a well thought and executed set of plans there are others pointing to the mess and chaos. However, the urban chaos is not seen only in Mumbai. It is a global phenomenon. To stem the chaos, the parliament passed a resolution to make participation of the citizens mandatory in city’s development. It is as per that act of 1994 by parliament that, the latest urban development plan was released by the BMC in 2015. This data was issued to the public. The format however, was not really in a way that could be easily understood or used. It was just raw data. Using GIS, this system aims at improving the quality of the provided data. The information will be digitized and added to the survey maps provided by the BMC. This mapping will be done over in several steps and will need various software such as QGIS, GeoNode (that includes geoserver, postgresql and postgis), Cartoview, ODK, etc. This platform will provide a better and understandable data format. In such a system, incorrect data can be checked as participation of the people leads to a better insight. The data provided was based on research from a foreign company appointed by MC. However, that data was not in complete sync with the actual state. All these issues can be resolved with the proposed system and it will also help keep track of the development taking placed and to check what tasks were promised, have been fulfilled, are being fulfilled or are being overlooked. This technology could revolutionize the implementation of the urban development plan and could have a real impact towards realizing the goal that has been set out, for a bigger, better and smarter city.<</p>
+		</div>
+
+
+	</body>
